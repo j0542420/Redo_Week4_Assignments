@@ -59,7 +59,7 @@ namespace Redo_Week4_Assignments
             // user inputs an amount of currency
             Console.WriteLine("Enter an amount of currency:");
             // get user input
-            string input = Console.ReadLine();
+            double amount = Convert.ToDouble(Console.ReadLine());
 
         }
         // method to Convert currency to USD
@@ -70,13 +70,10 @@ namespace Redo_Week4_Assignments
             switch (fromCurrency.ToUpper())
             {
                 case "EUR":
-                    conversionRate = 1.1; // Example conversion rate
-                    break;
-                case "GBP":
-                    conversionRate = 1.3; // Example conversion rate
+                    conversionRate = 0.96; // Example conversion rate
                     break;
                 case "JPY":
-                    conversionRate = 0.009; // Example conversion rate
+                    conversionRate = 152.20; // Example conversion rate
                     break;
                 default:
                     Console.WriteLine("Invalid currency.");
